@@ -7,8 +7,8 @@ PARTICIPANTES
 PENDENTE: nomes completos dos integrantes.
 
 LINKS
-Documentação: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs (conferir após envio).
-Diagrama de arquitetura: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama (conferir após envio; arquivo editável na mesma pasta).
+Documentação: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs
+Diagrama de arquitetura: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama (arquivo editável na mesma pasta).
 Vídeo (até 15 minutos): PENDENTE.
 Estimativa na Calculadora de Preços da AWS: https://calculator.aws/#/estimate?id=cbebee3def5152831130a070766d96939ff16e9f
 Print da estimativa: docs/evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg

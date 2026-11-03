@@ -24,7 +24,7 @@ Fonte: enunciado da fase 1 da FIAP, páginas 3 a 5 (PDF mantido apenas localment
   - [x] RDS PostgreSQL na sub-rede privada para o banco de dados.
   - [x] Security Group da EC2 permitindo HTTP/HTTPS e SSH de um IP específico.
   - [x] Security Group do RDS permitindo tráfego somente do Security Group da EC2.
-  - HTTPS permanece pendente como serviço; a regra 443 já existe no SG. Publicação do diagrama e link de entrega permanecem pendentes.
+  - HTTPS permanece pendente como serviço; a regra 443 já existe no SG. Diagrama publicado no fork pessoal.
 - [x] Fazer a estimativa de custo mensal da arquitetura na Calculadora de Preços da AWS.
 
 Observação sobre o banco: a aplicação fornecida usa PostgreSQL (`psycopg2`). PostgreSQL é a opção compatível com o código original, embora o enunciado também mencione MySQL.
@@ -50,7 +50,7 @@ Estimativa revisada para Ohio (`us-east-2`) em 31/10/2026: USD 27,32/mês. Link 
 
 ## 5. Documentação
 
-- [ ] Disponibilizar o link do diagrama de arquitetura, usando Miro, diagrams.net ou similar.
+- [x] Disponibilizar o link do diagrama de arquitetura, renderizado no GitHub e com arquivo editável `.drawio`.
 - [x] Documentar a discussão dos 12-Factor App aplicada ao projeto.
 
 ## 6. Relatório de entrega — PDF ou TXT
@@ -64,7 +64,7 @@ Estimativa revisada para Ohio (`us-east-2`) em 31/10/2026: USD 27,32/mês. Link 
 
 ## Estado atual e decisões já tomadas
 
-A execução local e a implantação HTTP na AWS estão validadas; as análises do monólito e dos 12 fatores estão documentadas. O SG da EC2 permite 80/443 e restringe SSH ao IP do Mac; o SG do RDS permite PostgreSQL da origem SG da EC2. O diagrama editável local foi atualizado para a implantação. HTTPS, publicação do diagrama, vídeo e links finais de entrega estão pendentes. Consulte o [índice da documentação](README.md).
+A execução local e a implantação HTTP na AWS estão validadas; as análises do monólito e dos 12 fatores estão documentadas. O SG da EC2 permite 80/443 e restringe SSH ao IP do Mac; o SG do RDS permite PostgreSQL da origem SG da EC2. O diagrama e a documentação estão publicados no fork pessoal. HTTPS, vídeo e dados finais do relatório estão pendentes. Consulte o [índice da documentação](README.md).
 
 O código da aplicação (`app.py`) permanece original. Os ajustes locais foram:
 

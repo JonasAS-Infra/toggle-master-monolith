@@ -107,10 +107,10 @@ Uma EC2 e um banco em uma única AZ bastam para a demonstração acadêmica; nã
 
 - Conferir no console os CIDRs, associações de rota, classe, versão e armazenamento reais; ajustar as informações planejadas do desenho se houver diferença.
 - Decidir se HTTPS será configurado para a apresentação e, se for, obter endereço/certificado e testar a porta 443.
-- Publicar o diagrama e registrar o link; o arquivo local editável já está nesta pasta.
+- Diagrama publicado no fork pessoal e arquivo editável mantido nesta pasta.
 - Gravar o vídeo e finalizar o relatório de entrega.
 
-Link do diagrama renderizado no GitHub: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama (conferir após envio). Arquivo editável `.drawio` na mesma pasta. A implantação manual foi feita pelo usuário no console da AWS.
+Link do diagrama renderizado no GitHub: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama. Arquivo editável `.drawio` na mesma pasta. A implantação manual foi feita pelo usuário no console da AWS.
 
 ## Decisão de conta e região — 31/10/2026
 

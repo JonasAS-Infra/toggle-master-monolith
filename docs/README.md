@@ -10,7 +10,7 @@ Toda a documentação e os materiais de entrega ficam nesta pasta. Atualização
 | [Checklist](CHECKLIST_FASE_1.md) | Requisitos e acompanhamento | Atualizado |
 | [Análise da aplicação](ANALISE_MONOLITO.md) | Funcionamento, monólito e avaliação para MVP | Documentada |
 | [12-Factor App](DOZE_FATORES.md) | Avaliação dos 12 fatores com evidências no código | Análise documentada |
-| [Arquitetura AWS](ARQUITETURA_AWS.md) | Requisitos, decisões e diagrama editável | Diagrama local atualizado para a implantação; publicação e HTTPS pendentes |
+| [Arquitetura AWS](ARQUITETURA_AWS.md) | Requisitos, decisões e diagrama editável | Diagrama publicado; HTTPS pendente |
 | [Custos AWS](CUSTOS_AWS.md) | Dados da calculadora e comprovação | Concluída: USD 27,32/mês, link e print salvos |
 | [Implantação AWS](IMPLANTACAO_AWS.md) | Registro do provisionamento e validações | HTTP e RDS validados; HTTPS pendente |
 | [Validação local](VALIDACAO_LOCAL.md) | Ambiente, ajustes e resultados da API | Execução validada; capturas pendentes |
@@ -25,7 +25,7 @@ Toda a documentação e os materiais de entrega ficam nesta pasta. Atualização
 - `evidencias/custos/`: print da Calculadora de Preços da AWS, solicitado no PDF.
 - O vídeo pode ser hospedado externamente; registrar seu link no relatório.
 - O [diagrama](ARQUITETURA_AWS.md#diagrama) é renderizado no GitHub; o [arquivo editável](ARQUITETURA_AWS.drawio) fica na mesma pasta.
-- Link da documentação para entrega: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs (conferir após envio).
+- Link da documentação para entrega: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs.
 
 Campos marcados como **PENDENTE** não são resultados comprovados. Não incluir senhas, tokens ou chaves privadas nos arquivos, capturas ou vídeo.
 
