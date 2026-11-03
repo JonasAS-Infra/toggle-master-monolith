@@ -1,0 +1,41 @@
+TOGGLEMASTER — TECH CHALLENGE — FASE 1
+
+STATUS: RASCUNHO. Há campos pendentes; este arquivo ainda não está pronto para entrega.
+Atualização: 03/11/2026.
+
+PARTICIPANTES
+PENDENTE: nomes completos dos integrantes.
+
+LINKS
+Documentação: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs (conferir após envio).
+Diagrama de arquitetura: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama (conferir após envio; arquivo editável na mesma pasta).
+Vídeo (até 15 minutos): PENDENTE.
+Estimativa na Calculadora de Preços da AWS: https://calculator.aws/#/estimate?id=cbebee3def5152831130a070766d96939ff16e9f
+Print da estimativa: docs/evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg
+
+RESUMO DO TRABALHO REALIZADO
+A aplicação monolítica fornecida foi executada localmente com Docker Compose e PostgreSQL. Foram validadas criação, listagem, consulta e atualização de uma flag. A análise do monólito e dos 12 fatores foi registrada na documentação. A aplicação foi implantada em uma EC2 Amazon Linux 2023 na região Ohio, conectada ao RDS PostgreSQL privado. Nginx encaminha HTTP para Gunicorn local, executado pelo serviço systemd togglemaster. O acesso público por IP e as operações de criação, consulta e atualização foram validados.
+
+DESAFIOS ENCONTRADOS E DECISÕES TOMADAS
+1. A porta 5000 do Mac estava ocupada por um serviço da Apple. Foi usada a porta 5001 no host, preservando a porta interna 5000 da aplicação.
+2. O endereço original dos pacotes Debian apresentou falhas de rede. O Dockerfile foi ajustado para utilizar outros endereços oficiais por HTTPS, sem desativar validações de assinatura.
+3. A lógica original da aplicação foi preservada, sem adicionar interface ou funcionalidades.
+4. PostgreSQL foi escolhido como banco para a proposta AWS por ser compatível com o código fornecido.
+5. A introdução do desafio menciona exclusão de flags, mas o código recebido não possui rota DELETE. A diferença foi documentada, preservando a aplicação recebida.
+6. O SSH expirou após a mudança do IP do Mac; a regra do SG foi atualizada para o novo IP /32.
+7. A aplicação usa variáveis de ambiente guardadas em arquivo local com permissão 0600, fora do repositório; as credenciais não foram incluídas nesta documentação.
+8. O SG da EC2 permite HTTP/HTTPS e restringe SSH; o SG do RDS permite a porta 5432 com origem no SG da EC2. A aplicação foi validada por HTTP. A configuração TLS ainda está pendente.
+
+CUSTOS
+Estimativa de 31/10/2026, região us-east-2, uso contínuo sob demanda: USD 27,32/mês (EC2 + EBS: USD 8,23; RDS PostgreSQL: USD 15,44; IPv4 público: USD 3,65). Custo inicial: USD 0,00. Detalhes e premissas em docs/CUSTOS_AWS.md; print e link indicados acima.
+
+REFERÊNCIAS LOCAIS DA DOCUMENTAÇÃO
+Índice: docs/README.md
+Enunciado: PDF da FIAP mantido apenas localmente.
+Análise: docs/ANALISE_MONOLITO.md e docs/DOZE_FATORES.md
+Arquitetura: docs/ARQUITETURA_AWS.md
+Implantação: docs/IMPLANTACAO_AWS.md
+Custos: docs/CUSTOS_AWS.md
+Validação local: docs/VALIDACAO_LOCAL.md
+
+Os caminhos locais acima organizam o projeto; os links acessíveis de entrega precisam ser preenchidos na seção LINKS.

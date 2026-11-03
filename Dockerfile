@@ -15,7 +15,10 @@ RUN chmod +x entrypoint.sh
 
 COPY app.py .
 
-RUN apt-get update && apt-get install -y postgresql-client
+RUN sed -i -e 's|http://deb.debian.org/debian-security|https://security.debian.org/debian-security|g' -e 's|http://deb.debian.org/debian|https://ftp.debian.org/debian|g' /etc/apt/sources.list.d/debian.sources \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5000
 
