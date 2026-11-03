@@ -42,11 +42,12 @@ Estimativa revisada para Ohio (`us-east-2`) em 31/10/2026: USD 27,32/mês. Link 
 
 ## 4. Vídeo de demonstração — até 15 minutos
 
-- [ ] Apresentar a aplicação funcionando localmente.
-- [ ] Explicar o diagrama da arquitetura proposta.
-- [ ] Demonstrar a aplicação funcionando na EC2 e acessando o RDS.
-- [ ] Mostrar as configurações dos Security Groups e como as credenciais do banco foram gerenciadas.
-- [ ] Concluir o vídeo com duração máxima de 15 minutos e obter o link para entrega.
+- [x] Apresentar a aplicação funcionando localmente.
+- [x] Explicar o diagrama da arquitetura proposta.
+- [x] Demonstrar a aplicação funcionando na EC2 e acessando o RDS.
+- [x] Mostrar as configurações dos Security Groups e como as credenciais do banco foram gerenciadas.
+- [x] Concluir o vídeo com duração máxima de 15 minutos. Arquivo final: `~/Desktop/ToggleMaster_video_final.mp4` (4 min 33 s).
+- [x] Publicar o vídeo e verificar o acesso pelo link.
 
 ## 5. Documentação
 
@@ -55,16 +56,16 @@ Estimativa revisada para Ohio (`us-east-2`) em 31/10/2026: USD 27,32/mês. Link 
 
 ## 6. Relatório de entrega — PDF ou TXT
 
-- [ ] Informar os nomes dos participantes.
-- [ ] Incluir o link da documentação.
-- [ ] Incluir o link do vídeo.
-- [ ] Resumir os desafios encontrados e as decisões tomadas.
+- [x] Informar o nome e o RM do participante.
+- [x] Incluir o link da documentação.
+- [x] Incluir o link do vídeo.
+- [x] Resumir os desafios encontrados e as decisões tomadas.
 - [x] Incluir o print da estimativa de custos da AWS.
-  - Evidência salva em `evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg` e referenciada em `ENTREGA.txt`.
+  - Evidência salva em `evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg`, incorporada ao [PDF de entrega](ENTREGA.pdf) e referenciada em `ENTREGA.txt`.
 
 ## Estado atual e decisões já tomadas
 
-A execução local e a implantação HTTP na AWS estão validadas; as análises do monólito e dos 12 fatores estão documentadas. O SG da EC2 permite 80/443 e restringe SSH ao IP do Mac; o SG do RDS permite PostgreSQL da origem SG da EC2. O diagrama e a documentação estão publicados no fork pessoal. HTTPS, vídeo e dados finais do relatório estão pendentes. Consulte o [índice da documentação](README.md).
+A execução local e a implantação HTTP na AWS estão validadas; as análises do monólito e dos 12 fatores estão documentadas. O SG da EC2 permite 80/443 e restringe SSH ao IP do Mac; o SG do RDS permite PostgreSQL da origem SG da EC2. O diagrama e a documentação estão publicados no fork pessoal. O vídeo foi publicado e os links e dados do participante estão no relatório. HTTPS segue sem configuração. Consulte o [índice da documentação](README.md).
 
 O código da aplicação (`app.py`) permanece original. Os ajustes locais foram:
 

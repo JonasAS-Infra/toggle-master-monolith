@@ -1,17 +1,17 @@
 TOGGLEMASTER — TECH CHALLENGE — FASE 1
 
-STATUS: RASCUNHO. Há campos pendentes; este arquivo ainda não está pronto para entrega.
+STATUS: PRONTO PARA ENTREGA.
 Atualização: 03/11/2026.
 
 PARTICIPANTES
-PENDENTE: nomes completos dos integrantes.
+Jonas Araujo Sousa — RM378030.
 
 LINKS
 Documentação: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs
 Diagrama de arquitetura: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/ARQUITETURA_AWS.md#diagrama (arquivo editável na mesma pasta).
-Vídeo (até 15 minutos): PENDENTE.
+Vídeo (4 min 33 s): https://www.youtube.com/watch?v=oPHH-gAWvjo
 Estimativa na Calculadora de Preços da AWS: https://calculator.aws/#/estimate?id=cbebee3def5152831130a070766d96939ff16e9f
-Print da estimativa: docs/evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg
+Print da estimativa: https://github.com/JonasAS-Infra/toggle-master-monolith/blob/main/docs/evidencias/custos/estimativa-aws-ohio-2026-10-31.jpg
 
 RESUMO DO TRABALHO REALIZADO
 A aplicação monolítica fornecida foi executada localmente com Docker Compose e PostgreSQL. Foram validadas criação, listagem, consulta e atualização de uma flag. A análise do monólito e dos 12 fatores foi registrada na documentação. A aplicação foi implantada em uma EC2 Amazon Linux 2023 na região Ohio, conectada ao RDS PostgreSQL privado. Nginx encaminha HTTP para Gunicorn local, executado pelo serviço systemd togglemaster. O acesso público por IP e as operações de criação, consulta e atualização foram validados.
@@ -38,4 +38,4 @@ Implantação: docs/IMPLANTACAO_AWS.md
 Custos: docs/CUSTOS_AWS.md
 Validação local: docs/VALIDACAO_LOCAL.md
 
-Os caminhos locais acima organizam o projeto; os links acessíveis de entrega precisam ser preenchidos na seção LINKS.
+Os caminhos acima organizam o projeto; os links acessíveis de entrega estão na seção LINKS.

@@ -14,8 +14,8 @@ Toda a documentação e os materiais de entrega ficam nesta pasta. Atualização
 | [Custos AWS](CUSTOS_AWS.md) | Dados da calculadora e comprovação | Concluída: USD 27,32/mês, link e print salvos |
 | [Implantação AWS](IMPLANTACAO_AWS.md) | Registro do provisionamento e validações | HTTP e RDS validados; HTTPS pendente |
 | [Validação local](VALIDACAO_LOCAL.md) | Ambiente, ajustes e resultados da API | Execução validada; capturas pendentes |
-| [Roteiro do vídeo](ROTEIRO_VIDEO.md) | Sequência sugerida para apresentação de até 15 minutos | Roteiro preparado; vídeo pendente |
-| [Relatório de entrega](ENTREGA.txt) | Participantes, links, desafios e decisões | Rascunho; não entregar com pendências |
+| [Roteiro do vídeo](ROTEIRO_VIDEO.md) | Sequência da apresentação de 4 min 33 s | [Vídeo publicado](https://www.youtube.com/watch?v=oPHH-gAWvjo) |
+| [Relatório de entrega](ENTREGA.pdf) | Participante, links, desafios, decisões e print da estimativa | PDF final; [versão TXT](ENTREGA.txt) |
 | Enunciado da FIAP | Cópia local do PDF fornecido pela faculdade | Referência não publicada neste repositório |
 
 ## Evidências e publicação
@@ -23,10 +23,10 @@ Toda a documentação e os materiais de entrega ficam nesta pasta. Atualização
 - `evidencias/local/`: capturas da execução local.
 - `evidencias/aws/`: capturas do provisionamento e da API na EC2.
 - `evidencias/custos/`: print da Calculadora de Preços da AWS, solicitado no PDF.
-- O vídeo pode ser hospedado externamente; registrar seu link no relatório.
+- [Vídeo de demonstração publicado no YouTube](https://www.youtube.com/watch?v=oPHH-gAWvjo); link registrado no relatório.
 - O [diagrama](ARQUITETURA_AWS.md#diagrama) é renderizado no GitHub; o [arquivo editável](ARQUITETURA_AWS.drawio) fica na mesma pasta.
 - Link da documentação para entrega: https://github.com/JonasAS-Infra/toggle-master-monolith/tree/main/docs.
 
-Campos marcados como **PENDENTE** não são resultados comprovados. Não incluir senhas, tokens ou chaves privadas nos arquivos, capturas ou vídeo.
+Não incluir senhas, tokens ou chaves privadas nos arquivos, capturas ou vídeo.
 
-O PDF exige o relatório final em PDF ou TXT. Usaremos `ENTREGA.txt`; os demais textos em Markdown compõem a documentação de apoio. Diagramas, estimativa, capturas e links serão adicionados conforme forem produzidos.
+O enunciado aceita o relatório final em PDF ou TXT. O [PDF final](ENTREGA.pdf) inclui o print da estimativa; a [versão TXT](ENTREGA.txt) contém os mesmos links e o caminho da imagem.

@@ -1,57 +1,60 @@
-<?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
   <diagram name="Implantação AWS - HTTP validado" id="togglemaster-fase1">
-    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" page="1" pageWidth="1200" pageHeight="1000">
+    <mxGraphModel dx="1651" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="ToggleMaster — Fase 1 | Implantação validada em 03/11/2026&#10;AWS Ohio (us-east-2) | HTTP ativo | HTTPS pendente" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="100" y="10" width="1000" height="60" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="ToggleMaster — Fase 1 | Implantação validada em 03/11/2026&#xa;AWS Ohio (us-east-2) | HTTP 80 validado | SG permite 80/443" vertex="1">
+          <mxGeometry height="60" width="1000" x="100" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="user" value="Usuário da API" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="150" y="95" width="220" height="55" />
+        <mxCell id="user" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Usuário da API" vertex="1">
+          <mxGeometry height="55" width="220" x="150" y="95" as="geometry" />
         </mxCell>
-        <mxCell id="admin" value="Mac — SSH autorizado: 45.229.54.221/32" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="720" y="95" width="300" height="55" />
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Mac — SSH autorizado: 45.229.54.221/32" vertex="1">
+          <mxGeometry height="55" width="300" x="720" y="95" as="geometry" />
         </mxCell>
-        <mxCell id="vpc" value="VPC togglemaster-vpc" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f5f5f5;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="80" y="245" width="1040" height="620" />
+        <mxCell id="vpc" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f5f5f5;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="VPC togglemaster-vpc" vertex="1">
+          <mxGeometry height="620" width="1040" x="80" y="245" as="geometry" />
         </mxCell>
-        <mxCell id="igw" value="Internet Gateway&#10;Associado à VPC" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="465" y="180" width="270" height="60" />
+        <mxCell id="igw" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Internet Gateway&#xa;Associado à VPC" vertex="1">
+          <mxGeometry height="60" width="270" x="465" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="pub" value="Sub-rede pública — us-east-2a&#10;EC2 com IPv4 público e acesso via Internet Gateway" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="125" y="300" width="950" height="80" />
+        <mxCell id="pub" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Sub-rede pública — us-east-2a&#xa;EC2 com IPv4 público e acesso via Internet Gateway" vertex="1">
+          <mxGeometry height="80" width="950" x="125" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="ec2" value="EC2 t3.micro / Amazon Linux 2023 | us-east-2a&#10;i-0c8f51662ac454703 | 18.220.243.88&#10;SG: 22 Mac/32; 80 e 443 públicos&#10;Nginx 80 → Gunicorn 127.0.0.1:5000 → Flask" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="295" y="405" width="610" height="115" />
+        <mxCell id="ec2" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="EC2 t3.micro / Amazon Linux 2023 | us-east-2a&#xa;i-0c8f51662ac454703 | 18.220.243.88&#xa;SG: 22 Mac/32; 80 e 443 públicos&#xa;Nginx 80 → Gunicorn 127.0.0.1:5000 → Flask" vertex="1">
+          <mxGeometry height="115" width="610" x="295" y="405" as="geometry" />
         </mxCell>
-        <mxCell id="privA" value="Sub-rede privada A&#10;DB subnet group do RDS" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="140" y="610" width="440" height="65" />
+        <mxCell id="privA" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Sub-rede privada A&#xa;DB subnet group do RDS" vertex="1">
+          <mxGeometry height="65" width="440" x="140" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="privB" value="Sub-rede privada B&#10;DB subnet group do RDS" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="635" y="610" width="440" height="65" />
+        <mxCell id="privB" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Sub-rede privada B&#xa;DB subnet group do RDS" vertex="1">
+          <mxGeometry height="65" width="440" x="635" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="rds" value="RDS PostgreSQL — togglemaster-db&#10;Banco togglemaster | us-east-2a&#10;SG: TCP 5432 somente do SG da EC2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="155" y="710" width="410" height="95" />
+        <mxCell id="rds" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="RDS PostgreSQL — togglemaster-db&#xa;Banco togglemaster | us-east-2a&#xa;SG: TCP 5432 somente do SG da EC2" vertex="1">
+          <mxGeometry height="95" width="410" x="155" y="710" as="geometry" />
         </mxCell>
-        <mxCell id="empty" value="Sem segunda instância de banco&#10;As duas sub-redes integram&#10;o DB subnet group do RDS" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="655" y="710" width="400" height="95" />
+        <mxCell id="empty" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="Sem segunda instância de banco&#xa;As duas sub-redes integram&#xa;o DB subnet group do RDS" vertex="1">
+          <mxGeometry height="95" width="400" x="655" y="710" as="geometry" />
         </mxCell>
-        <mxCell id="foot" value="API pública validada: GET/POST/PUT → EC2 → RDS. Gunicorn em serviço systemd.&#10;443 está liberada no SG, mas o listener/certificado HTTPS ainda não foi configurado.&#10;As duas sub-redes privadas integram o DB subnet group; apenas um banco está ativo." style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="100" y="890" width="1000" height="80" />
+        <mxCell id="foot" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontSize=14;verticalAlign=middle;" value="API pública validada: GET/POST/PUT → EC2 → RDS. Gunicorn em serviço systemd.&#xa;SG da EC2: portas 80 e 443 públicas; SSH restrito ao IP autorizado.&#xa;As duas sub-redes privadas integram o DB subnet group; apenas um banco está ativo." vertex="1">
+          <mxGeometry height="80" width="1000" x="100" y="890" as="geometry" />
         </mxCell>
-        <mxCell id="e1" value="HTTP 80 validado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" edge="1" parent="1" source="user" target="igw">
-          <mxGeometry as="geometry" relative="1" />
+        <mxCell id="e1" edge="1" parent="1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" target="igw" value="HTTP 80 validado">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" value="SSH 22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" edge="1" parent="1" source="admin" target="igw">
-          <mxGeometry as="geometry" relative="1" />
+        <mxCell id="e2" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" target="igw" value="SSH 22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" value="Acesso público" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" edge="1" parent="1" source="igw" target="ec2">
-          <mxGeometry as="geometry" relative="1" />
+        <mxCell id="e3" edge="1" parent="1" source="igw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" target="ec2" value="Acesso público">
+          <mxGeometry relative="1" x="-0.0303" y="60" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e4" value="PostgreSQL 5432 — rede privada" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" edge="1" parent="1" source="ec2" target="rds">
-          <mxGeometry as="geometry" relative="1" />
+        <mxCell id="e4" edge="1" parent="1" source="ec2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=12;" target="rds" value="PostgreSQL 5432 — rede privada">
+          <mxGeometry relative="1" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
